@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Katalog — BozorGo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="catalog">
+  <div id="site-header"></div>
+  <main>
+    <div class="container">
+      <div class="page-head"><h1 id="ctitle">Katalog</h1><p id="count"></p></div>
+      <div class="chips" id="chips"></div>
+      <div class="toolbar">
+        <div class="toolbar__l">
+          <input type="search" id="csearch" placeholder="Katalogdan qidirish..." aria-label="Qidirish">
+          <label class="check"><input type="checkbox" id="sale"> Faqat chegirmada</label>
+        </div>
+        <div class="toolbar__r">
+          <select id="sort" aria-label="Saralash">
+            <option value="pop">Mashhurlik bo'yicha</option>
+            <option value="cheap">Avval arzonlari</option>
+            <option value="exp">Avval qimmatlari</option>
+            <option value="new">Yangilari</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid" id="list"></div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
